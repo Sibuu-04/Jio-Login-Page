@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Jio</title>
+    <link rel="stylesheet" href="./jio.css" />
+    <link
+      rel="icon"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC/klEQVR4AbxVA8wdQRB+tW3btm3bdqMyaH/btm3btm3btqe3l3bz7uV+XV46yem72dlvuKyRy+9541gCT8axBHXHsgTiiKuO+O5DF3pHGPqHdJAui3vCt4UwrE9czcQFI7yQrj5ay2IuQtPHsoTkCEOdyCjDqxPZQLZG7TUR0iRkhBsXsjWKaAjtJ/JYhRZy80I2ke3h8831zakk0B5D5JxR2Bmkg6Ym/hYc/I8L7UUT+tFV++2bFhAVVQohwUVw+qTBqLuDkgrUs0MtmDVdHC5fNIErl0xg9gxxEsvPb4B/EhlZwiQS+njCDTdk7O3S8WbWVqkk5u2dizEz02QmBJrJiYlG51CKE8cJQQGbt7Gx5SQ+d7YkvHphDy+e2sHMaeJMu+IJCr8uEwLbt6qBkGAA8PL4wbLFshT9q5dNQUkxkoycoUECfHjnDHNmStDZ12WhQ4QJgaTESowpyIWT2Lw5kuDllQsDAwPAKUWFjXBwnzZnS8YhAnVMCNTUtGFMWysWxo8RAmvLVGCXrq5eCpmiokaYO0uSnUAdqoE+bhDYuE4Jenv7AUlPTx98eO8MSxfJwo1rZtBQ34F1P390Ya+BPq4RuHvbEn+7u2VTbIiJBuF/erpxVAKcKZg6SYTwRpnyXVXVig2Eh5fQErh/1wp/W1qkUAh8++qB/xnox1NTwFmE8kRBNTR0ws/vXnDimB4I8AcAe02ZmiTREti5XR36+0lFaGzshD07Nci6WLJQBhITKrDuj2+e1CKktqEQJCBlekFEkKe0BCaMFYKIiBKMdXX2QnJyJUmGEExs5TI5ahtyDiJJiRC0Ea3Y2qShmiD1cnPqMC4rE0ZiWzerku1GJ62t3Zg8ZRBxjuJJ44XhzStHcHLMhIT4CjJ8zk5ZBOYAkycI48WXLhiTY9lAPwHWrlLE+MJ50sD72xcC/AvIWREeVkymdfMGFdpRPORhhHKILobH7nBr9f8Ma3VMJ4yojge+QTLwTTL6N0oHYbOc/h0T+nfNhkrnlP7dcwB6A15HyociSgAAAABJRU5ErkJggg=="
+    />
+  </head>
+  <body>
+    <!-- top part of websute -->
+    <header>
+      <div class="headergrid">
+        <div class="logo">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Reliance_Jio_Logo.svg/2048px-Reliance_Jio_Logo.svg.png"
+            height="40"
+            alt=""
+            onclick="change()"
+          />
+        </div>
+        <div class="navbar">
+          <span>
+            <a href="#">Mobile</a>
+          </span>
+          <span>
+            <a href="#">True 5G</a>
+          </span>
+          <span>
+            <a href="#">JioFiber</a>
+          </span>
+          <span>
+            <a href="#">AirFiber</a>
+          </span>
+          <span>
+            <a href="#">Business</a>
+          </span>
+          <span>
+            <a href="#">Devices</a>
+          </span>
+          <span>
+            <a href="#">Apps</a>
+          </span>
+          <span>
+            <a href="#">Support</a>
+          </span>
+        </div>
+        <div class="button">
+          <button>
+            <svg
+              style="max-height: 24px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.004 2a7 7 0 015.6 11.19l6.11 6.1a1.002 1.002 0 01-.325 1.639.999.999 0 01-1.095-.219l-6.1-6.11A7 7 0 1110.004 2zm0 12a5 5 0 100-10 5 5 0 000 10z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </button>
+          <button class="btn2">
+            <svg
+              style="max-height: 24px"
+              id="nonloggedin-content"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 10a4 4 0 100-8 4 4 0 000 8zM12 22c4.418 0 8-2.462 8-5.5S16.418 11 12 11s-8 2.462-8 5.5S7.582 22 12 22z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- 2nd part of website -->
+
+    <section>
+      <div class="container">
+        <div class="box box1">
+          <h2>Manage your Digital Life with the MyJio app</h2>
+          <span
+            ><svg
+              height="30"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="12" cy="12" r="10" fill="#fff"></circle>
+              <path
+                d="M12 2a10 10 0 100 20 10 10 0 000-20zm5.21 7.71l-6 6a1.002 1.002 0 01-1.42 0l-3-3a1.003 1.003 0 111.42-1.42l2.29 2.3 5.29-5.3a1.004 1.004 0 011.42 1.42z"
+                fill="#25AB21"
+              ></path></svg
+          ></span>
+          <span>Recharge, pay bills, and check balance</span>
+          <br />
+          <span
+            ><svg
+              height="30"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="12" cy="12" r="10" fill="#fff"></circle>
+              <path
+                d="M12 2a10 10 0 100 20 10 10 0 000-20zm5.21 7.71l-6 6a1.002 1.002 0 01-1.42 0l-3-3a1.003 1.003 0 111.42-1.42l2.29 2.3 5.29-5.3a1.004 1.004 0 011.42 1.42z"
+                fill="#25AB21"
+              ></path></svg
+          ></span>
+          <span>Shop, UPI, and health</span>
+          <br />
+          <span
+            ><svg
+              height="30"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="12" cy="12" r="10" fill="#fff"></circle>
+              <path
+                d="M12 2a10 10 0 100 20 10 10 0 000-20zm5.21 7.71l-6 6a1.002 1.002 0 01-1.42 0l-3-3a1.003 1.003 0 111.42-1.42l2.29 2.3 5.29-5.3a1.004 1.004 0 011.42 1.42z"
+                fill="#25AB21"
+              ></path></svg
+          ></span>
+          <span>Movies, music, and games</span>
+          <br />
+          <span
+            ><svg
+              height="30"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="12" cy="12" r="10" fill="#fff"></circle>
+              <path
+                d="M12 2a10 10 0 100 20 10 10 0 000-20zm5.21 7.71l-6 6a1.002 1.002 0 01-1.42 0l-3-3a1.003 1.003 0 111.42-1.42l2.29 2.3 5.29-5.3a1.004 1.004 0 011.42 1.42z"
+                fill="#25AB21"
+              ></path></svg
+          ></span>
+          <span>Instant help with JioCare</span>
+        </div>
+        <div class="box box2">
+          <div class="loginbox">
+            <h1>Welcome to Jio</h1>
+            <p>Log in to unlock a world of digital experiences.</p>
+            <div class="btnbox">
+              <button class="btn1 btn">Mobile</button>
+              <button class="btn1">Login</button>
+              <button class="btn1"><a href="./jio1.html">Business</a></button>
+            </div>
+            <br /><br />
+            <label for="">Mobile Number</label>
+            <br />
+
+            <input type="text" name="" id="uname" />
+            <br />
+            <br /><br />
+            <button onclick="login()" class="otp">Generate OTP</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./jio.js"></script>
+  </body>
+</html>
